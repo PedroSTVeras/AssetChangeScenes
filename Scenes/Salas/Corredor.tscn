@@ -1,21 +1,15 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Outros/SavePlayer.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Tileset/Parede.png" type="Texture" id=2]
 [ext_resource path="res://Tiles.tres" type="TileSet" id=3]
 [ext_resource path="res://Scenes/Outros/Door.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sprites/Itens/Key.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Player/jogador_3.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10.4513, 7.07958 )
-
-[sub_resource type="CircleShape2D" id=2]
-
-custom_solver_bias = 0.0
-radius = 147.133
+extents = Vector2( 8.40356, 4.63477 )
 
 [node name="Corredor" type="Node2D" index="0"]
 
@@ -117,29 +111,5 @@ texture = ExtResource( 5 )
 position = Vector2( 0.350727, 0.308083 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
-
-[node name="Key2" type="StaticBody2D" parent="." index="5" groups=[
-"key",
-]]
-
-input_pickable = false
-collision_layer = 4
-collision_mask = 2
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Collision" ]
-
-[node name="Sprite" type="Sprite" parent="Key2" index="0"]
-
-position = Vector2( 1643.95, 643.18 )
-scale = Vector2( 1, 0.676587 )
-texture = ExtResource( 6 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Key2" index="1"]
-
-position = Vector2( 1651.5, 647.006 )
-shape = SubResource( 2 )
 
 
