@@ -1,0 +1,145 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/Outros/SavePlayer.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Tileset/Parede.png" type="Texture" id=2]
+[ext_resource path="res://Tiles.tres" type="TileSet" id=3]
+[ext_resource path="res://Scenes/Outros/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprites/Itens/Key.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Player/jogador_3.png" type="Texture" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.4513, 7.07958 )
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 147.133
+
+[node name="Corredor" type="Node2D" index="0"]
+
+position = Vector2( -46.7649, 26.7229 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Parede" type="Sprite" parent="." index="0"]
+
+position = Vector2( 2269.33, 414.289 )
+scale = Vector2( 74.9711, 35.4241 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TileMap" type="TileMap" parent="." index="1"]
+
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -131075, 28, 0, -131074, 28, 0, -131073, 28, 0, -196608, 28, 0, -196607, 28, 0, -196606, 28, 0, -196605, 28, 0, -196604, 28, 0, -196603, 28, 0, -196602, 28, 0, -196601, 28, 0, -196600, 28, 0, -196599, 28, 0, -196598, 28, 0, -196597, 28, 0, -196596, 28, 0, -196595, 28, 0, -196594, 28, 0, -196593, 28, 0, -196592, 28, 0, -196591, 28, 0, -196590, 28, 0, -196589, 28, 0, -196588, 28, 0, -196587, 28, 0, -196586, 28, 0, -196585, 28, 0, -196583, 28, 0, -196582, 28, 0, -196581, 28, 0, -196580, 28, 0, -196579, 28, 0, -196578, 28, 0, -196577, 28, 0, -196576, 28, 0, -196575, 28, 0, -196573, 28, 0, -196572, 28, 0, -65539, 28, 0, -131063, -1073741819, 0, -131062, -1073741819, 0, -131061, -1073741819, 0, -131060, -1073741819, 0, -131059, -1073741819, 0, -131058, -1073741819, 0, -131057, -1073741819, 0, -131056, -1073741819, 0, -131055, -1073741819, 0, -131054, -1073741819, 0, -131053, -1073741819, 0, -131052, -1073741819, 0, -131051, -1073741819, 0, -131050, -1073741819, 0, -65527, 18, 0, -65526, 18, 0, -65525, 18, 0, -65524, 18, 0, -65523, 18, 0, -65522, 18, 0, -65521, 18, 0, -65520, 18, 0, -65519, 18, 0, -65518, 18, 0, -65517, 18, 0, -65516, 18, 0, -65515, 18, 0, -65514, 18, 0, 65533, 28, 0, 9, 19, 0, 10, 19, 0, 11, 16, 0, 12, 16, 0, 13, 16, 0, 14, 16, 0, 15, 16, 0, 16, 16, 0, 17, 16, 0, 18, 16, 0, 19, 16, 0, 20, 16, 0, 21, 19, 0, 22, 19, 0, 36, 28, 0, 131069, 28, 0, 65545, 19, 0, 65546, 19, 0, 65547, 16, 0, 65548, 16, 0, 65549, 16, 0, 65550, 16, 0, 65551, 16, 0, 65552, 16, 0, 65553, 16, 0, 65554, 16, 0, 65555, 16, 0, 65556, 16, 0, 65557, 19, 0, 65558, 19, 0, 65572, 28, 0, 196605, 28, 0, 131081, 19, 0, 131082, 19, 0, 131083, 16, 0, 131084, 16, 0, 131085, 16, 0, 131086, 16, 0, 131087, 16, 0, 131088, 16, 0, 131089, 16, 0, 131090, 16, 0, 131091, 16, 0, 131092, 16, 0, 131093, 19, 0, 131094, 19, 0, 131108, 28, 0, 262141, 28, 0, 196617, 19, 0, 196618, 19, 0, 196619, 16, 0, 196620, 16, 0, 196621, 16, 0, 196622, 16, 0, 196623, 16, 0, 196624, 16, 0, 196625, 16, 0, 196626, 16, 0, 196627, 16, 0, 196628, 16, 0, 196629, 19, 0, 196630, 19, 0, 196644, 28, 0, 327677, 28, 0, 262153, 19, 0, 262154, 19, 0, 262155, 16, 0, 262156, 16, 0, 262157, 16, 0, 262158, 16, 0, 262159, 16, 0, 262160, 16, 0, 262161, 16, 0, 262162, 16, 0, 262163, 16, 0, 262164, 16, 0, 262165, 19, 0, 262166, 19, 0, 262180, 28, 0, 393213, 28, 0, 327689, 19, 0, 327690, 19, 0, 327691, 16, 0, 327692, 16, 0, 327693, 16, 0, 327694, 16, 0, 327695, 16, 0, 327696, 16, 0, 327697, 16, 0, 327698, 16, 0, 327699, 16, 0, 327700, 16, 0, 327701, 19, 0, 327702, 19, 0, 327716, 28, 0, 393225, 19, 0, 393226, 19, 0, 393227, 16, 0, 393228, 16, 0, 393229, 16, 0, 393230, 16, 0, 393231, 16, 0, 393232, 16, 0, 393233, 16, 0, 393234, 16, 0, 393235, 16, 0, 393236, 16, 0, 393237, 19, 0, 393238, 19, 0, 458761, 19, 0, 458762, 19, 0, 458763, 16, 0, 458764, 16, 0, 458765, 16, 0, 458766, 16, 0, 458767, 16, 0, 458768, 16, 0, 458769, 16, 0, 458770, 16, 0, 458771, 16, 0, 458772, 16, 0, 458773, 19, 0, 458774, 19, 0, 524297, 20, 0, 524298, 20, 0, 524299, 20, 0, 524300, 20, 0, 524301, 20, 0, 524302, 20, 0, 524303, 20, 0, 524306, 20, 0, 524307, 20, 0, 524308, 20, 0, 524309, 20, 0, 524310, 20, 0, 589833, -1610612731, 0, 589834, -1610612731, 0, 589835, -1610612731, 0, 589836, -1610612731, 0, 589837, -1610612731, 0, 589838, -1610612731, 0, 589839, -1610612731, 0, 589840, -1610612731, 0, 589841, -1610612731, 0, 589842, -1610612731, 0, 589843, -1610612731, 0, 589844, -1610612731, 0, 589845, -1610612731, 0, 589846, -1610612731, 0 )
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TileMap2" type="TileMap" parent="." index="2"]
+
+z_index = 2
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -131063, 35, 0, -131050, -1610612701, 0, -65527, 13, 0, -65514, 536870925, 0, 9, 13, 0, 22, 536870925, 0, 65545, 13, 0, 65558, 536870925, 0, 131081, 13, 0, 131094, 536870925, 0, 196617, 13, 0, 196630, 536870925, 0, 262153, 13, 0, 262166, 536870925, 0, 327689, 13, 0, 327702, 536870925, 0, 393225, 13, 0, 393238, 536870925, 0, 458761, 13, 0, 458774, 536870925, 0, 524297, 13, 0, 524310, 536870925, 0, 655357, 28, 0, 589833, -1073741789, 0, 589846, 1610612771, 0, 720893, 28, 0, 655360, 28, 0, 655361, 28, 0, 655362, 28, 0, 655363, 28, 0, 655364, 28, 0, 655365, 28, 0, 655366, 28, 0, 655367, 28, 0, 655368, 28, 0, 655369, 28, 0, 655370, 28, 0, 655371, 28, 0, 655372, 28, 0, 655373, 28, 0, 655374, 28, 0, 655375, 28, 0, 655376, 28, 0, 655377, 28, 0, 655378, 28, 0, 655379, 28, 0, 655380, 28, 0, 655381, 28, 0, 655382, 28, 0, 655383, 28, 0, 655384, 28, 0, 655385, 28, 0, 655386, 28, 0, 655387, 28, 0, 655388, 28, 0, 655389, 28, 0, 655390, 28, 0, 655391, 28, 0, 655392, 28, 0, 655393, 28, 0, 655394, 28, 0, 655395, 28, 0, 655396, 28, 0 )
+_sections_unfolded = [ "Cell", "Transform", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Door4" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 2175, 1152.48 )
+rotation = -3.14159
+player_x = 1380
+player_y = 20
+path = "res://Scenes/Salas/QuartoPlayer.tscn"
+PortaFechada = "res://Door.png"
+PortaAberta = "res://Door2.png"
+playerName = "Player"
+key = NodePath("../Key")
+
+[node name="Key" type="StaticBody2D" parent="." index="4" groups=[
+"key",
+]]
+
+position = Vector2( 1917.95, 417.913 )
+scale = Vector2( 5.61037, 5.61536 )
+input_pickable = true
+collision_layer = 4
+collision_mask = 2
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision" ]
+
+[node name="Sprite" type="Sprite" parent="Key" index="0"]
+
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Key" index="1"]
+
+position = Vector2( 0.350727, 0.308083 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="Key2" type="StaticBody2D" parent="." index="5" groups=[
+"key",
+]]
+
+input_pickable = false
+collision_layer = 4
+collision_mask = 2
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision" ]
+
+[node name="Sprite" type="Sprite" parent="Key2" index="0"]
+
+position = Vector2( 1643.95, 643.18 )
+scale = Vector2( 1, 0.676587 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Key2" index="1"]
+
+position = Vector2( 1651.5, 647.006 )
+shape = SubResource( 2 )
+
+

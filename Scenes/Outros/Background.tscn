@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Outros/FadeOut.gd" type="Script" id=1]
+
+[node name="Background" type="Node2D"]
+
+z_index = 4
+script = ExtResource( 1 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+
+[node name="Timer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 1.3
+one_shot = true
+autostart = true
+_sections_unfolded = [ "Pause" ]
+
+[node name="Polygon2D" type="Polygon2D" parent="." index="1"]
+
+position = Vector2( -2313.71, -1678.65 )
+scale = Vector2( 46.617, 33.7481 )
+polygon = PoolVector2Array( 100, 100, 100, 0, 0, 0, 0, 100 )
+uv = PoolVector2Array(  )
+color = Color( 0.0898438, 0.0838776, 0.0838776, 0 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Meio 4.png-7873f8f888d3fca3a2e92bbb4d092577.stex"
+
+[deps]
+
+source_file="res://Sprites/Tileset/Meio 4.png"
+source_md5="2160c0e1f407d5a1853fe5fefb1c5ecd"
+
+dest_files=[ "res://.import/Meio 4.png-7873f8f888d3fca3a2e92bbb4d092577.stex" ]
+dest_md5="7a0c6bfbd68ce97f23d67abeac40059b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

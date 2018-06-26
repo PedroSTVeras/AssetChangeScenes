@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Canto 6.png-05a58a49d2bde1cb8989029107e0e742.stex"
+
+[deps]
+
+source_file="res://Sprites/Tileset/Canto 6.png"
+source_md5="9f355b8a3b581d71fe140f72bc75ad4e"
+
+dest_files=[ "res://.import/Canto 6.png-05a58a49d2bde1cb8989029107e0e742.stex" ]
+dest_md5="727d3a55fa46c0113c2390b514a68f14"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

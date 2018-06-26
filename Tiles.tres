@@ -1,0 +1,547 @@
+[gd_resource type="TileSet" load_steps=45 format=2]
+
+[ext_resource path="res://Sprites/Tileset/Canto 1.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tileset/Canto 2.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Tileset/Canto Chão 5.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Tileset/Canto Chão 6.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Tileset/Canto Chão Modelo.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Tileset/Canto Modelo.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Tileset/Chão com Parede.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Tileset/Chão.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Tileset/Meio 1.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Tileset/Meio 2.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Tileset/Meio 3.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Tileset/Canto 3.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Tileset/Meio 4.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Tileset/Meio 5.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Tileset/Meio Chão 1.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Tileset/Meio Chão 2.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Tileset/Meio Chão 3.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Tileset/Meio Chão 4.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Tileset/Meio Chão 5.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Tileset/Meio Chão Modelo.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Tileset/Parede.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Tileset/Porta1.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Tileset/Canto 4.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Tileset/Porta2.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Tileset/Porta3.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Tileset/Porta4.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Tileset/Porta5.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Tileset/Porta6.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Tileset/Canto Modelo 3.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Tileset/canto7.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Tileset/Canto 5.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Tileset/Canto 6.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Tileset/Canto Chão 1.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Tileset/Canto Chão 2.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Tileset/Canto Chão 3.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Tileset/Canto Chão 4.png" type="Texture" id=36]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 64, 64 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 71.4077, 51.224 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 21, 52 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 21, 64 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 71.4077, 14.7761 )
+
+[sub_resource type="NavigationPolygon" id=6]
+
+vertices = PoolVector2Array( -64, 64, -64, -64, 64, -64, 64, 64 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( 64, 64, 64, -64, -64, -64, -64, 64 ) ]
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 64, 64 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 64, 64 )
+
+[resource]
+
+0/name = "Canto 1"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/is_autotile = false
+0/occluder_offset = Vector2( 64, 64 )
+0/navigation_offset = Vector2( 64, 64 )
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+1/name = "Canto 2"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 128, 128 )
+1/is_autotile = false
+1/occluder_offset = Vector2( 64, 64 )
+1/navigation_offset = Vector2( 64, 64 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+2/name = "Canto 3"
+2/texture = ExtResource( 12 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/is_autotile = false
+2/occluder_offset = Vector2( 64, 64 )
+2/navigation_offset = Vector2( 64, 64 )
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+3/name = "Canto 4"
+3/texture = ExtResource( 23 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/is_autotile = false
+3/occluder_offset = Vector2( 64, 64 )
+3/navigation_offset = Vector2( 64, 64 )
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+4/name = "Canto 5"
+4/texture = ExtResource( 31 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 128 )
+4/is_autotile = false
+4/occluder_offset = Vector2( 64, 64 )
+4/navigation_offset = Vector2( 64, 64 )
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+5/name = "Canto 6"
+5/texture = ExtResource( 32 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 128 )
+5/is_autotile = false
+5/occluder_offset = Vector2( 64, 64 )
+5/navigation_offset = Vector2( 64, 64 )
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+6/name = "Canto Chão 1"
+6/texture = ExtResource( 33 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/is_autotile = false
+6/occluder_offset = Vector2( 64, 64 )
+6/navigation_offset = Vector2( 64, 64 )
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+7/name = "Canto Chão 2"
+7/texture = ExtResource( 34 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 128, 128 )
+7/is_autotile = false
+7/occluder_offset = Vector2( 64, 64 )
+7/navigation_offset = Vector2( 64, 64 )
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+8/name = "Canto Chão 3"
+8/texture = ExtResource( 35 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 128, 128 )
+8/is_autotile = false
+8/occluder_offset = Vector2( 64, 64 )
+8/navigation_offset = Vector2( 64, 64 )
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+9/name = "Canto Chão 4"
+9/texture = ExtResource( 36 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 128, 128 )
+9/is_autotile = false
+9/occluder_offset = Vector2( 64, 64 )
+9/navigation_offset = Vector2( 64, 64 )
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+10/name = "Canto Chão 5"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 128, 128 )
+10/is_autotile = false
+10/occluder_offset = Vector2( 64, 64 )
+10/navigation_offset = Vector2( 64, 64 )
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+11/name = "Canto Chão 6"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 128, 128 )
+11/is_autotile = false
+11/occluder_offset = Vector2( 64, 64 )
+11/navigation_offset = Vector2( 64, 64 )
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+12/name = "Canto Chão Modelo"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 128, 128 )
+12/is_autotile = false
+12/occluder_offset = Vector2( 64, 64 )
+12/navigation_offset = Vector2( 64, 64 )
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 21, 52 )
+} ]
+13/name = "Canto Modelo"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 128, 128 )
+13/is_autotile = false
+13/occluder_offset = Vector2( 64, 64 )
+13/navigation_offset = Vector2( 64, 64 )
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 21, 64 )
+} ]
+14/name = "Canto Modelo2"
+14/texture = ExtResource( 6 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 128, 128 )
+14/is_autotile = false
+14/occluder_offset = Vector2( 64, 64 )
+14/navigation_offset = Vector2( 64, 64 )
+14/shapes = [  ]
+15/name = "Chão com Parede"
+15/texture = ExtResource( 7 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 128, 128 )
+15/is_autotile = false
+15/occluder_offset = Vector2( 64, 64 )
+15/navigation_offset = Vector2( 64, 64 )
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 113 )
+} ]
+16/name = "Chão"
+16/texture = ExtResource( 8 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 128, 128 )
+16/is_autotile = false
+16/occluder_offset = Vector2( 64, 64 )
+16/navigation_offset = Vector2( 64, 64 )
+16/navigation = SubResource( 6 )
+16/shapes = [  ]
+17/name = "Meio 1"
+17/texture = ExtResource( 9 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 128, 128 )
+17/is_autotile = false
+17/occluder_offset = Vector2( 64, 64 )
+17/navigation_offset = Vector2( 64, 64 )
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+18/name = "Meio 2"
+18/texture = ExtResource( 10 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 128, 128 )
+18/is_autotile = false
+18/occluder_offset = Vector2( 64, 64 )
+18/navigation_offset = Vector2( 64, 64 )
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+19/name = "Meio 3"
+19/texture = ExtResource( 11 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 128, 128 )
+19/is_autotile = false
+19/occluder_offset = Vector2( 64, 64 )
+19/navigation_offset = Vector2( 64, 64 )
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+20/name = "Meio 4"
+20/texture = ExtResource( 13 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 128, 128 )
+20/is_autotile = false
+20/occluder_offset = Vector2( 64, 64 )
+20/navigation_offset = Vector2( 64, 64 )
+20/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+21/name = "Meio 5"
+21/texture = ExtResource( 14 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 128, 128 )
+21/is_autotile = false
+21/occluder_offset = Vector2( 64, 64 )
+21/navigation_offset = Vector2( 64, 64 )
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+22/name = "Meio Chão 1"
+22/texture = ExtResource( 15 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 128, 128 )
+22/is_autotile = false
+22/occluder_offset = Vector2( 64, 64 )
+22/navigation_offset = Vector2( 64, 64 )
+22/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+23/name = "Meio Chão 2"
+23/texture = ExtResource( 16 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 128, 128 )
+23/is_autotile = false
+23/occluder_offset = Vector2( 64, 64 )
+23/navigation_offset = Vector2( 64, 64 )
+23/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+24/name = "Meio Chão 3"
+24/texture = ExtResource( 17 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 128, 128 )
+24/is_autotile = false
+24/occluder_offset = Vector2( 64, 64 )
+24/navigation_offset = Vector2( 64, 64 )
+24/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+25/name = "Meio Chão 4"
+25/texture = ExtResource( 18 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 0, 0, 128, 128 )
+25/is_autotile = false
+25/occluder_offset = Vector2( 64, 64 )
+25/navigation_offset = Vector2( 64, 64 )
+25/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+26/name = "Meio Chão 5"
+26/texture = ExtResource( 19 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 128, 128 )
+26/is_autotile = false
+26/occluder_offset = Vector2( 64, 64 )
+26/navigation_offset = Vector2( 64, 64 )
+26/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 0.896262, 0, 0, 1.01515, 64, 52 )
+} ]
+27/name = "Meio Chão Modelo"
+27/texture = ExtResource( 20 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 0, 0, 128, 128 )
+27/is_autotile = false
+27/occluder_offset = Vector2( 64, 64 )
+27/navigation_offset = Vector2( 64, 64 )
+27/shapes = [  ]
+28/name = "Parede"
+28/texture = ExtResource( 21 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 0, 128, 128 )
+28/is_autotile = false
+28/occluder_offset = Vector2( 64, 64 )
+28/navigation_offset = Vector2( 64, 64 )
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
+} ]
+29/name = "Porta1"
+29/texture = ExtResource( 22 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 0, 0, 16, 16 )
+29/is_autotile = false
+29/occluder_offset = Vector2( 8, 8 )
+29/navigation_offset = Vector2( 8, 8 )
+29/shapes = [  ]
+30/name = "Porta2"
+30/texture = ExtResource( 24 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 0, 0, 16, 16 )
+30/is_autotile = false
+30/occluder_offset = Vector2( 8, 8 )
+30/navigation_offset = Vector2( 8, 8 )
+30/shapes = [  ]
+31/name = "Porta3"
+31/texture = ExtResource( 25 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 16, 16 )
+31/is_autotile = false
+31/occluder_offset = Vector2( 8, 8 )
+31/navigation_offset = Vector2( 8, 8 )
+31/shapes = [  ]
+32/name = "Porta4"
+32/texture = ExtResource( 26 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 16, 16 )
+32/is_autotile = false
+32/occluder_offset = Vector2( 8, 8 )
+32/navigation_offset = Vector2( 8, 8 )
+32/shapes = [  ]
+33/name = "Porta5"
+33/texture = ExtResource( 27 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 0, 0, 16, 16 )
+33/is_autotile = false
+33/occluder_offset = Vector2( 8, 8 )
+33/navigation_offset = Vector2( 8, 8 )
+33/shapes = [  ]
+34/name = "Porta6"
+34/texture = ExtResource( 28 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 0, 0, 16, 16 )
+34/is_autotile = false
+34/occluder_offset = Vector2( 8, 8 )
+34/navigation_offset = Vector2( 8, 8 )
+34/shapes = [  ]
+35/name = "Canto Modelo 3"
+35/texture = ExtResource( 29 )
+35/tex_offset = Vector2( 0, 0 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 0, 0, 128, 128 )
+35/is_autotile = false
+35/occluder_offset = Vector2( 64, 64 )
+35/navigation_offset = Vector2( 64, 64 )
+35/shapes = [  ]
+36/name = "canto7"
+36/texture = ExtResource( 30 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 0, 0, 128, 128 )
+36/is_autotile = false
+36/occluder_offset = Vector2( 64, 64 )
+36/navigation_offset = Vector2( 64, 64 )
+36/shapes = [  ]
+

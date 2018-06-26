@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Canto Chão 6.png-a118dfef57d87298ada6edd5fed62710.stex"
+
+[deps]
+
+source_file="res://Sprites/Tileset/Canto Chão 6.png"
+source_md5="5d0ea5f4b2d3f8f6b64f75eacd6215ab"
+
+dest_files=[ "res://.import/Canto Chão 6.png-a118dfef57d87298ada6edd5fed62710.stex" ]
+dest_md5="97b5410e0a04e5f945ffc0c1b30f89ac"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

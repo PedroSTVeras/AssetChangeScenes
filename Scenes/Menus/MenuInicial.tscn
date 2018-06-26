@@ -1,0 +1,191 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/Menus/initialRoot.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Initial_Screen/background.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Initial_Screen/new_game.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Initial_Screen/options.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Initial_Screen/exit.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Initial_Screen/yes.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Initial_Screen/no.png" type="Texture" id=7]
+
+[node name="initialRoot" type="Node2D"]
+
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="initialBackground" type="Sprite" parent="." index="0"]
+
+position = Vector2( 351, 302 )
+scale = Vector2( 1.00781, 1.01042 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
+
+[node name="start_continue" type="TextureButton" parent="initialBackground" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -160.0
+margin_top = -120.0
+margin_right = 182.0
+margin_bottom = 8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="options" type="TextureButton" parent="initialBackground" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -160.0
+margin_top = -20.0
+margin_right = 182.0
+margin_bottom = 108.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 4 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="quit" type="TextureButton" parent="initialBackground" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -160.0
+margin_top = 80.0
+margin_right = 182.0
+margin_bottom = 208.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="confirm" type="PopupMenu" parent="initialBackground" index="3"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 138.0
+margin_top = 206.0
+margin_right = 906.0
+margin_bottom = 590.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+items = [  ]
+hide_on_state_item_selection = false
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Popup", "Rect", "Visibility" ]
+
+[node name="yes" type="TextureButton" parent="initialBackground/confirm" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 140.0
+margin_top = 240.0
+margin_right = 268.0
+margin_bottom = 336.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 6 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="no" type="TextureButton" parent="initialBackground/confirm" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 504.0
+margin_top = 240.0
+margin_right = 632.0
+margin_bottom = 336.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 7 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="quit2" type="TextureButton" parent="initialBackground/confirm" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 124.0
+margin_top = 59.0
+margin_right = 466.0
+margin_bottom = 187.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+_sections_unfolded = [ "Anchor", "Focus", "Grow Direction", "Hint", "Margin", "Material", "Mouse", "Rect", "Size Flags", "Textures", "Theme", "Visibility" ]
+
+

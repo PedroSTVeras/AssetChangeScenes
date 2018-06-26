@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Meio Chão 4.png-b7a6988e06fb17d040c66a7db25821f8.stex"
+
+[deps]
+
+source_file="res://Sprites/Tileset/Meio Chão 4.png"
+source_md5="269f965fd4a016ad84bcfcc8c6014670"
+
+dest_files=[ "res://.import/Meio Chão 4.png-b7a6988e06fb17d040c66a7db25821f8.stex" ]
+dest_md5="e0309c775ae269d1c66322aa32c67d93"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

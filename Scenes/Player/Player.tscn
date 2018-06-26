@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Player/playerRoot.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Player/jogador_2.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Menus/pauseBackground.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 87.2027, 86.6351 )
+
+[node name="Player" type="KinematicBody2D" index="0"]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 13
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
+
+[node name="Camera2D" type="Camera2D" parent="." index="0"]
+
+position = Vector2( 0, -2 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 3, 3 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "Smoothing", "Transform", "Visibility", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( -0.00217819, 49.0276 )
+rotation = 1.5708
+scale = Vector2( 0.688036, 0.750298 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility" ]
+
+[node name="pauseBackground" parent="." index="3" instance=ExtResource( 3 )]
+
+visible = false
+position = Vector2( 0.00454235, -0.00271249 )
+
+
